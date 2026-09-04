@@ -123,7 +123,7 @@ namespace JTGuard.ServerManagers.Events
                     }
                     else
                     {
-                        await sqlQueryHelper.EXEC_QUERY($"UPDATE {Service.ShardDB}.._Char set RemainGold={LotteryGoldLogger.Count * RegisterGold} where CharID = {LotteryGoldLogger[winnerCharName]}");
+                        await sqlQueryHelper.EXEC_QUERY($"UPDATE {Service.ShardDB}.._Char set RemainGold=@Gold where CharID=@CharID", new { Gold = LotteryGoldLogger.Count * RegisterGold, CharID = LotteryGoldLogger[winnerCharName] });
                     }
 
                 }

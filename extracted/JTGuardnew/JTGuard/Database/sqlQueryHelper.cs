@@ -48,8 +48,8 @@ namespace JTGuard.Database
                 {
                     await connection.OpenAsync();
 
-                    string query = $"EXEC [dbo].[_AuthCharLogin] @UserName='{username}', @Password='{password}'";
-                    int result = await connection.QuerySingleOrDefaultAsync<int>(query);
+                    string query = "EXEC [dbo].[_AuthCharLogin] @UserName, @Password";
+                    int result = await connection.QuerySingleOrDefaultAsync<int>(query, new { UserName = username, Password = password });
                     return result == 1;
                 }
             }
@@ -153,9 +153,8 @@ namespace JTGuard.Database
                 {
                     await connection.OpenAsync();
                     int rememberPCValue = RememberPC ? 1 : 0;
-                    string query = $"INSERT INTO _AccountSecondaryPassword (StrUserID, Password, Hwid, RememberPC) VALUES('{userId}'," +
-                        $"{Password}, '{Hwid}', {rememberPCValue})";
-                    var result = await connection.QuerySingleOrDefaultAsync(query);
+                    string query = "INSERT INTO _AccountSecondaryPassword (StrUserID, Password, Hwid, RememberPC) VALUES(@userId, @Password, @Hwid, @rememberPCValue)";
+                    var result = await connection.QuerySingleOrDefaultAsync(query, new { userId, Password, Hwid, rememberPCValue });
 
                     return;
                 }
@@ -174,8 +173,8 @@ namespace JTGuard.Database
                 {
                     await connection.OpenAsync();
                     int rememberPCValue = RememberPC ? 1 : 0;
-                    string query = $"UPDATE _AccountSecondaryPassword SET Password = {Password}, RememberPC={rememberPCValue} where StrUserID = '{userId}'";
-                    var result = await connection.QuerySingleOrDefaultAsync(query);
+                    string query = "UPDATE _AccountSecondaryPassword SET Password = @Password, RememberPC = @rememberPCValue WHERE StrUserID = @userId";
+                    var result = await connection.QuerySingleOrDefaultAsync(query, new { Password, rememberPCValue, userId });
 
                     return;
                 }
@@ -212,8 +211,8 @@ namespace JTGuard.Database
                 {
                     await connection.OpenAsync();
 
-                    string query = $"SELECT * FROM _AccountSecondaryPassword WHERE StrUserID = '{userId}'";
-                    var result = await connection.QuerySingleOrDefaultAsync<SecondaryPasswordData>(query);
+                    string query = "SELECT * FROM _AccountSecondaryPassword WHERE StrUserID = @userId";
+                    var result = await connection.QuerySingleOrDefaultAsync<SecondaryPasswordData>(query, new { userId });
 
                     return result;
                 }
