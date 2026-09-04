@@ -1,0 +1,9 @@
+C:\Users\YUMBUL\Desktop\WebGuard\SilkroadSecurityAPI\bin\Release\net8.0\SilkroadSecurityAPI.deps.json
+C:\Users\YUMBUL\Desktop\WebGuard\SilkroadSecurityAPI\bin\Release\net8.0\SilkroadSecurityAPI.dll
+C:\Users\YUMBUL\Desktop\WebGuard\SilkroadSecurityAPI\bin\Release\net8.0\SilkroadSecurityAPI.pdb
+C:\Users\YUMBUL\Desktop\WebGuard\SilkroadSecurityAPI\obj\Release\net8.0\SilkroadSecurityAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YUMBUL\Desktop\WebGuard\SilkroadSecurityAPI\obj\Release\net8.0\SilkroadSecurityAPI.csproj.CoreCompileInputs.cache
+C:\Users\YUMBUL\Desktop\WebGuard\SilkroadSecurityAPI\obj\Release\net8.0\SilkroadSecurityAPI.dll
+C:\Users\YUMBUL\Desktop\WebGuard\SilkroadSecurityAPI\obj\Release\net8.0\refint\SilkroadSecurityAPI.dll
+C:\Users\YUMBUL\Desktop\WebGuard\SilkroadSecurityAPI\obj\Release\net8.0\SilkroadSecurityAPI.pdb
+C:\Users\YUMBUL\Desktop\WebGuard\SilkroadSecurityAPI\obj\Release\net8.0\ref\SilkroadSecurityAPI.dll

@@ -1,0 +1,184 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|d:\\masa\u00FCst\u00FC\\vsrojt\\jtguardnew\\jtguard\\server\\agentserver\\packethandler\\customgameserverpackethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|solutionrelative:jtguard\\server\\agentserver\\packethandler\\customgameserverpackethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|d:\\masa\u00FCst\u00FC\\vsrojt\\jtguardnew\\jtguard\\server\\agentserver\\packethandler\\cospackets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|solutionrelative:jtguard\\server\\agentserver\\packethandler\\cospackets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|d:\\masa\u00FCst\u00FC\\vsrojt\\jtguardnew\\jtguard\\server\\agentserver\\packethandler\\alchemypackets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|solutionrelative:jtguard\\server\\agentserver\\packethandler\\alchemypackets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|d:\\masa\u00FCst\u00FC\\vsrojt\\jtguardnew\\jtguard\\commandmanager\\commandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|solutionrelative:jtguard\\commandmanager\\commandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|d:\\masa\u00FCst\u00FC\\vsrojt\\jtguardnew\\jtguard\\database\\models\\_asyncfiltercommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|solutionrelative:jtguard\\database\\models\\_asyncfiltercommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|d:\\masa\u00FCst\u00FC\\vsrojt\\jtguardnew\\jtguard\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|solutionrelative:jtguard\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|d:\\masa\u00FCst\u00FC\\vsrojt\\jtguardnew\\jtguard\\server\\agentserver\\agentserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|solutionrelative:jtguard\\server\\agentserver\\agentserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|d:\\masa\u00FCst\u00FC\\vsrojt\\jtguardnew\\jtguard\\server\\agentserver\\packethandler\\exploitfixpackets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|solutionrelative:jtguard\\server\\agentserver\\packethandler\\exploitfixpackets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|d:\\masa\u00FCst\u00FC\\vsrojt\\jtguardnew\\jtguard\\server\\agentserver\\packethandler\\customuipackets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|solutionrelative:jtguard\\server\\agentserver\\packethandler\\customuipackets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|d:\\masa\u00FCst\u00FC\\vsrojt\\jtguardnew\\jtguard\\database\\databasecommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8A8C7E-C953-46FB-88C2-7CECF3E3F8CA}|JTGuard\\JTGuard.csproj|solutionrelative:jtguard\\database\\databasecommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomGameServerPacketHandler.cs",
+              "DocumentMoniker": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Server\\AgentServer\\PacketHandler\\CustomGameServerPacketHandler.cs",
+              "RelativeDocumentMoniker": "JTGuard\\Server\\AgentServer\\PacketHandler\\CustomGameServerPacketHandler.cs",
+              "ToolTip": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Server\\AgentServer\\PacketHandler\\CustomGameServerPacketHandler.cs",
+              "RelativeToolTip": "JTGuard\\Server\\AgentServer\\PacketHandler\\CustomGameServerPacketHandler.cs",
+              "ViewState": "AgIAABEBAAAAAAAAAAAIwDQBAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T14:49:18.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CommandHandler.cs",
+              "DocumentMoniker": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\CommandManager\\CommandHandler.cs",
+              "RelativeDocumentMoniker": "JTGuard\\CommandManager\\CommandHandler.cs",
+              "ToolTip": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\CommandManager\\CommandHandler.cs",
+              "RelativeToolTip": "JTGuard\\CommandManager\\CommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T14:19:10.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DatabaseCommands.cs",
+              "DocumentMoniker": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Database\\DatabaseCommands.cs",
+              "RelativeDocumentMoniker": "JTGuard\\Database\\DatabaseCommands.cs",
+              "ToolTip": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Database\\DatabaseCommands.cs",
+              "RelativeToolTip": "JTGuard\\Database\\DatabaseCommands.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAAIAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T14:34:47.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "COSPackets.cs",
+              "DocumentMoniker": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Server\\AgentServer\\PacketHandler\\COSPackets.cs",
+              "RelativeDocumentMoniker": "JTGuard\\Server\\AgentServer\\PacketHandler\\COSPackets.cs",
+              "ToolTip": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Server\\AgentServer\\PacketHandler\\COSPackets.cs",
+              "RelativeToolTip": "JTGuard\\Server\\AgentServer\\PacketHandler\\COSPackets.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T14:48:07.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AgentServer.cs",
+              "DocumentMoniker": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Server\\AgentServer\\AgentServer.cs",
+              "RelativeDocumentMoniker": "JTGuard\\Server\\AgentServer\\AgentServer.cs",
+              "ToolTip": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Server\\AgentServer\\AgentServer.cs",
+              "RelativeToolTip": "JTGuard\\Server\\AgentServer\\AgentServer.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAnwK8AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T20:46:26.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomUIPackets.cs",
+              "DocumentMoniker": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Server\\AgentServer\\PacketHandler\\CustomUIPackets.cs",
+              "RelativeDocumentMoniker": "JTGuard\\Server\\AgentServer\\PacketHandler\\CustomUIPackets.cs",
+              "ToolTip": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Server\\AgentServer\\PacketHandler\\CustomUIPackets.cs",
+              "RelativeToolTip": "JTGuard\\Server\\AgentServer\\PacketHandler\\CustomUIPackets.cs",
+              "ViewState": "AgIAACgFAAAAAAAAAAAswDQFAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T21:18:44.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Startup.cs",
+              "RelativeDocumentMoniker": "JTGuard\\Startup.cs",
+              "ToolTip": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Startup.cs",
+              "RelativeToolTip": "JTGuard\\Startup.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswCgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T19:53:02.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AlchemyPackets.cs",
+              "DocumentMoniker": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Server\\AgentServer\\PacketHandler\\AlchemyPackets.cs",
+              "RelativeDocumentMoniker": "JTGuard\\Server\\AgentServer\\PacketHandler\\AlchemyPackets.cs",
+              "ToolTip": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Server\\AgentServer\\PacketHandler\\AlchemyPackets.cs",
+              "RelativeToolTip": "JTGuard\\Server\\AgentServer\\PacketHandler\\AlchemyPackets.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAnwC4AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T19:38:54.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_AsyncFilterCommands.cs",
+              "DocumentMoniker": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Database\\Models\\_AsyncFilterCommands.cs",
+              "RelativeDocumentMoniker": "JTGuard\\Database\\Models\\_AsyncFilterCommands.cs",
+              "ToolTip": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Database\\Models\\_AsyncFilterCommands.cs",
+              "RelativeToolTip": "JTGuard\\Database\\Models\\_AsyncFilterCommands.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T14:36:56.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ExploitFixPackets.cs",
+              "DocumentMoniker": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Server\\AgentServer\\PacketHandler\\ExploitFixPackets.cs",
+              "RelativeDocumentMoniker": "JTGuard\\Server\\AgentServer\\PacketHandler\\ExploitFixPackets.cs",
+              "ToolTip": "D:\\MASA\u00DCST\u00DC\\VSROJT\\JTGuardnew\\JTGuard\\Server\\AgentServer\\PacketHandler\\ExploitFixPackets.cs",
+              "RelativeToolTip": "JTGuard\\Server\\AgentServer\\PacketHandler\\ExploitFixPackets.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAnwCoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T21:18:27.027Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
