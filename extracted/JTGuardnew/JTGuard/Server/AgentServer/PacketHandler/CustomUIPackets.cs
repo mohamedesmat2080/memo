@@ -2124,14 +2124,21 @@ namespace JTGuard.Server.AgentPacketHandler
                             using (var connection = new SqlConnection(Program.Connectionstring))
                             {
                                 await connection.OpenAsync();
-                                string query = $"EXEC _OnNewItemMallPurchased_EDIT {session.SessionData.JID}, {session.SessionData.Charid}, '{session.SessionData.Charname}', {RefManager.m_RefNewItemMall[ItemMallDbID].ItemID}, {Price * Quantity}";
+                                string query = $"EXEC _OnNewItemMallPurchased_EDIT @jid, @charid, @charname, @itemid, @price";
                                 using (var command = new SqlCommand(query, connection))
                                 {
+                                    command.Parameters.AddWithValue("@jid", session.SessionData.JID);
+                                    command.Parameters.AddWithValue("@charid", session.SessionData.Charid);
+                                    command.Parameters.AddWithValue("@charname", session.SessionData.Charname);
+                                    command.Parameters.AddWithValue("@itemid", RefManager.m_RefNewItemMall[ItemMallDbID].ItemID);
+                                    command.Parameters.AddWithValue("@price", Price * Quantity);
                                     await command.ExecuteNonQueryAsync();
                                 }
-                                string query2 = $"UPDATE SRO_VT_ACCOUNT..SK_Silk SET silk_own = {newSilkAmount} WHERE JID = {session.SessionData.JID}";
+                                string query2 = $"UPDATE {Service.AccountDB}..SK_Silk SET silk_own = @newSilk WHERE JID = @jid";
                                 using (var command = new SqlCommand(query2, connection))
                                 {
+                                    command.Parameters.AddWithValue("@newSilk", newSilkAmount);
+                                    command.Parameters.AddWithValue("@jid", session.SessionData.JID);
                                     await command.ExecuteNonQueryAsync();
                                 }
                             }
@@ -2181,15 +2188,22 @@ namespace JTGuard.Server.AgentPacketHandler
                             using (var connection = new SqlConnection(Program.Connectionstring))
                             {
                                 await connection.OpenAsync();
-                                string query = $"EXEC _OnNewItemMallPurchased_EDIT {session.SessionData.JID}, {session.SessionData.Charid}, '{session.SessionData.Charname}',{RefManager.m_RefNewAvatarMall[ItemMallDbID].ItemID}, {Price}";
+                                string query = $"EXEC _OnNewItemMallPurchased_EDIT @jid, @charid, @charname, @itemid, @price";
                                 using (var command = new SqlCommand(query, connection))
                                 {
+                                    command.Parameters.AddWithValue("@jid", session.SessionData.JID);
+                                    command.Parameters.AddWithValue("@charid", session.SessionData.Charid);
+                                    command.Parameters.AddWithValue("@charname", session.SessionData.Charname);
+                                    command.Parameters.AddWithValue("@itemid", RefManager.m_RefNewAvatarMall[ItemMallDbID].ItemID);
+                                    command.Parameters.AddWithValue("@price", Price);
                                     await command.ExecuteNonQueryAsync();
                                 }
 
-                                string query2 = $"UPDATE SRO_VT_ACCOUNT..SK_Silk SET silk_own = {newSilkAmount} WHERE JID = {session.SessionData.JID}";
+                                string query2 = $"UPDATE {Service.AccountDB}..SK_Silk SET silk_own = @newSilk WHERE JID = @jid";
                                 using (var command = new SqlCommand(query2, connection))
                                 {
+                                    command.Parameters.AddWithValue("@newSilk", newSilkAmount);
+                                    command.Parameters.AddWithValue("@jid", session.SessionData.JID);
                                     await command.ExecuteNonQueryAsync();
                                 }
                             }
@@ -2627,7 +2641,7 @@ namespace JTGuard.Server.AgentPacketHandler
                             }
                             else
                             {
-                                int CurrentSilk = await sqlQueryHelper.prod_int($"SELECT silk_own FROM {Service.AccountDB}..SK_Silk WITH (NOLOCK) WHERE JID = {session.SessionData.JID}", Program.Connectionstring);
+int CurrentSilk = await sqlQueryHelper.prod_int($"SELECT silk_own FROM {Service.AccountDB}..SK_Silk WITH (NOLOCK) WHERE JID = @jid", Program.Connectionstring, new { jid = session.SessionData.JID });
 
 
                                 if (CurrentSilk != -1 && CurrentSilk >= AgentServer.eventManager.lotterySilk.RegisterSilk)
@@ -2637,9 +2651,11 @@ namespace JTGuard.Server.AgentPacketHandler
                                     using (var connection = new SqlConnection(Program.Connectionstring))
                                     {
                                         await connection.OpenAsync();
-                                        string query2 = $"UPDATE SRO_VT_ACCOUNT..SK_Silk SET silk_own = {newSilkAmount} WHERE JID = {session.SessionData.JID}";
+                                        string query2 = $"UPDATE {Service.AccountDB}..SK_Silk SET silk_own = @newSilk WHERE JID = @jid";
                                         using (var command = new SqlCommand(query2, connection))
                                         {
+                                            command.Parameters.AddWithValue("@newSilk", newSilkAmount);
+                                            command.Parameters.AddWithValue("@jid", session.SessionData.JID);
                                             await command.ExecuteNonQueryAsync();
                                         }
                                     }
@@ -2893,17 +2909,20 @@ namespace JTGuard.Server.AgentPacketHandler
                     string TargetItemCodeName = packet.ReadAscii();
 
                     bool isvalid = false;
-                    string query = $"SELECT 1 FROM {Service.ShardDB}.._RefObjCommon with (nolock) WHERE CodeName128 = '{TargetItemCodeName}' and Service = 1";
+string query = $"SELECT 1 FROM {Service.ShardDB}.._RefObjCommon with (nolock) WHERE CodeName128 = @codename and Service = 1";
                     using (var connection = new SqlConnection(Program.Connectionstring))
                     {
                         using (var command = new SqlCommand(query, connection))
                         {
+                            command.Parameters.AddWithValue("@codename", TargetItemCodeName);
                             await connection.OpenAsync();
                             var result = await command.ExecuteScalarAsync();
                             if (result != null)
                             {
                                 isvalid = true;
                             }
+                        }
+                    }
                         }
                     }
                     if (Service.ItemTranslationPayment == 0) /// silk

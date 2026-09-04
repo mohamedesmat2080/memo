@@ -276,8 +276,8 @@ namespace JTGuard.Server
                     remainingTime -= 1000; // 1 saniye eksilt
                     if (remainingTime <= 0)
                     {
-                        await sqlQueryHelper.EXEC_QUERY($"INSERT INTO _AsyncGameServerCommands(Action_ID, Data1, Data2) VALUES(22, {key.WorldID}, {key.LayerID})");
-                        await sqlQueryHelper.EXEC_QUERY($"UPDATE {Service.ShardDB}.._CharInstanceWorldData set DungeonKeyID = {0} where WorldID = {key.WorldID} and LayerID = {key.WorldID}");
+                        await sqlQueryHelper.EXEC_QUERY("INSERT INTO _AsyncGameServerCommands(Action_ID, Data1, Data2) VALUES(22, @worldId, @layerId)", new { worldId = key.WorldID, layerId = key.LayerID });
+                        await sqlQueryHelper.EXEC_QUERY($"UPDATE {Service.ShardDB}.._CharInstanceWorldData set DungeonKeyID = 0 where WorldID = @worldId and LayerID = @layerId", new { worldId = key.WorldID, layerId = key.LayerID });
                         eventManager.CreatedTimerListWorldIDAndLayerID.TryRemove(key, out _); // Süresi dolanları kaldır
                         //Packet timer = new Packet(0x220A);
                         //timer.WriteUInt8(1);

@@ -233,9 +233,10 @@ namespace JTGuard.Server.AgentPacketHandler
                 using (var connection = new SqlConnection(Program.Connectionstring))
                 {
                     await connection.OpenAsync();
-                    string query = $"INSERT INTO _LockedItemList (ItemID64) VALUES({id64})";
+                    string query = "INSERT INTO _LockedItemList (ItemID64) VALUES(@id64)";
                     using (var command = new SqlCommand(query, connection))
                     {
+                        command.Parameters.AddWithValue("@id64", id64);
                         await command.ExecuteNonQueryAsync();
 
                     }
@@ -270,9 +271,10 @@ namespace JTGuard.Server.AgentPacketHandler
                 using (var connection = new SqlConnection(Program.Connectionstring))
                 {
                     await connection.OpenAsync();
-                    string query = $"DELETE FROM _LockedItemList where ItemID64  = {id64}";
+                    string query = "DELETE FROM _LockedItemList where ItemID64 = @id64";
                     using (var command = new SqlCommand(query, connection))
                     {
+                        command.Parameters.AddWithValue("@id64", id64);
                         await command.ExecuteNonQueryAsync();
 
                     }

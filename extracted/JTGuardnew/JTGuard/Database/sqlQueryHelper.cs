@@ -84,7 +84,7 @@ namespace JTGuard.Database
             }
             return value;
         }
-        public static async Task<int> prod_int(string query, string connectionstring)
+        public static async Task<int> prod_int(string query, string connectionstring, object parameters = null)
         {
             int value = 0;
             try
@@ -93,6 +93,13 @@ namespace JTGuard.Database
                 {
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
+                        if (parameters != null)
+                        {
+                            foreach (var prop in parameters.GetType().GetProperties())
+                            {
+                                cmd.Parameters.AddWithValue($"@{prop.Name}", prop.GetValue(parameters));
+                            }
+                        }
                         await con.OpenAsync();
                         object result = await cmd.ExecuteScalarAsync();
                         value = result != null ? Convert.ToInt32(result) : 0;
@@ -185,7 +192,7 @@ namespace JTGuard.Database
                 return;
             }
         }
-        public static async Task EXEC_QUERY(string query)
+        public static async Task EXEC_QUERY(string query, object parameters = null)
         {
             try
             {
@@ -193,6 +200,13 @@ namespace JTGuard.Database
                 {
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
+                        if (parameters != null)
+                        {
+                            foreach (var prop in parameters.GetType().GetProperties())
+                            {
+                                cmd.Parameters.AddWithValue($"@{prop.Name}", prop.GetValue(parameters));
+                            }
+                        }
                         await con.OpenAsync();
                         await cmd.ExecuteNonQueryAsync();
                     }

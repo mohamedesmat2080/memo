@@ -87,7 +87,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         } // tested
                         else if (CommandID == 2)
                         {
@@ -99,7 +99,7 @@ namespace JTGuard.Database
                                     AgentServer.AgentSessions.Remove(line);
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         } // tested
                         else if (CommandID == 3)
                         {
@@ -129,7 +129,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         } // tested
                         else if (CommandID == 4)
                         {
@@ -159,7 +159,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }  // tested
                         else if (CommandID == 5)
                         {
@@ -194,7 +194,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         } // tested
                         else if (CommandID == 6)
                         {
@@ -238,7 +238,7 @@ namespace JTGuard.Database
 
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 7)
                         {
@@ -261,7 +261,7 @@ namespace JTGuard.Database
                                 }
 
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         } // tested
                         else if (CommandID == 8)
                         {
@@ -283,7 +283,7 @@ namespace JTGuard.Database
                                 stAckMsg.WriteUInt32(argbInputColor);
                                 await AgentServer.BroadcastPacket(stAckMsg);
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         } // tested UPDATE TITLE COLOR
                         else if (CommandID == 9) /// REMOVE TITLE COLOR
                         {
@@ -297,7 +297,7 @@ namespace JTGuard.Database
                                 stAckMsg.WriteAscii(command.Data1);
                                 await AgentServer.BroadcastPacket(stAckMsg);
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 10) /// UPDATE LEFT CHAR ICON
                         {
@@ -319,7 +319,7 @@ namespace JTGuard.Database
                                     await AgentServer.BroadcastPacket(stAckMsg);
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 11) /// UPDATE RIGHT CHAR ICON
                         {
@@ -341,7 +341,7 @@ namespace JTGuard.Database
                                     await AgentServer.BroadcastPacket(stAckMsg);
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 12) /// REMOVE LEFT CHAR ICON
                         {
@@ -356,7 +356,7 @@ namespace JTGuard.Database
                                 stAckMsg.WriteAscii(command.Data1);
                                 await AgentServer.BroadcastPacket(stAckMsg);
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 13) /// REMOVE right CHAR ICON
                         {
@@ -371,7 +371,7 @@ namespace JTGuard.Database
                                 stAckMsg.WriteAscii(command.Data1);
                                 await AgentServer.BroadcastPacket(stAckMsg);
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 15)
                         {
@@ -398,7 +398,7 @@ namespace JTGuard.Database
 
 
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 16) /// REMOVE new title
                         {
@@ -413,7 +413,7 @@ namespace JTGuard.Database
                                 stAckMsg.WriteAscii(command.Data1);
                                 await AgentServer.BroadcastPacket(stAckMsg);
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 17)
                         {
@@ -456,7 +456,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 18)
                         {
@@ -475,7 +475,7 @@ namespace JTGuard.Database
                                 }
 
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 19)
                         {
@@ -494,7 +494,7 @@ namespace JTGuard.Database
                                 }
 
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 20)
                         {
@@ -513,7 +513,7 @@ namespace JTGuard.Database
                                 }
 
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 21)
                         {
@@ -528,7 +528,7 @@ namespace JTGuard.Database
                                     await AgentServer.BroadcastPacketbyWorldID(WorldID, pck);
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 22)
                         {
@@ -543,7 +543,7 @@ namespace JTGuard.Database
                                     await AgentServer.BroadcastPacketbyRegionID(RegionID, pck);
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 23)
                         {
@@ -575,7 +575,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 24)
                         {
@@ -607,7 +607,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 25)
                         {
@@ -646,7 +646,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 26)
                         {
@@ -704,7 +704,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 27)
                         {
@@ -739,7 +739,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 28)
                         {
@@ -758,7 +758,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 29)
                         {
@@ -798,7 +798,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
 
                         }
                         else if (CommandID == 30)
@@ -833,7 +833,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 31)
                         {
@@ -928,7 +928,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 32)
                         {
@@ -961,7 +961,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 33)
                         {
@@ -1056,7 +1056,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 34)
                         {
@@ -1072,7 +1072,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                         else if (CommandID == 35)
                         {
@@ -1149,7 +1149,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
 
                         }
                         else if (CommandID == 36)
@@ -1174,7 +1174,7 @@ namespace JTGuard.Database
                                     }
                                 }
                             }
-                            await sharedConnection.ExecuteAsync($"DELETE FROM _AsyncFilterCommands WHERE CommandID = {CommandID}");
+                            await sharedConnection.ExecuteAsync("DELETE FROM _AsyncFilterCommands WHERE CommandID = @id", new { id = CommandID });
                         }
                     }
                     catch (Exception ex)
