@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿#region
+=======
+#region
+>>>>>>> theirs
 
 #endregion
 

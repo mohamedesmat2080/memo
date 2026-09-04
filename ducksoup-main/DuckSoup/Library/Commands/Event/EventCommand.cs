@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using System.Linq;
+=======
+using System.Linq;
+>>>>>>> theirs
 using API.Command;
 
 namespace DuckSoup.Library.Commands.Event;

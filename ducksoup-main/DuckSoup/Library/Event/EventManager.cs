@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using System;
+=======
+using System;
+>>>>>>> theirs
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;

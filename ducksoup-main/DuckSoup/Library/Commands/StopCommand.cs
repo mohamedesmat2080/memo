@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using API.Command;
+=======
+using API.Command;
+>>>>>>> theirs
 
 namespace DuckSoup.Library.Commands;
 

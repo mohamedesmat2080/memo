@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿namespace API.Event;
+=======
+namespace API.Event;
+>>>>>>> theirs
 
 public enum EventStateEnum : byte
 {

@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿namespace SilkroadSecurityAPI
+=======
+namespace SilkroadSecurityAPI
+>>>>>>> theirs
 {
     public class TransferBuffer
     {

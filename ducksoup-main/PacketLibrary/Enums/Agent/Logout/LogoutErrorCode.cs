@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿namespace PacketLibrary.Enums.Agent.Logout;
+=======
+namespace PacketLibrary.Enums.Agent.Logout;
+>>>>>>> theirs
 
 // https://github.com/DummkopfOfHachtenduden/SilkroadDoc/wiki/LogoutErrorCode
 public enum LogoutErrorCode : ushort

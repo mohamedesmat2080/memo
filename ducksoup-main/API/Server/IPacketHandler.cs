@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using API.Session;
+=======
+using API.Session;
+>>>>>>> theirs
 using SilkroadSecurityAPI;
 
 namespace API.Server;

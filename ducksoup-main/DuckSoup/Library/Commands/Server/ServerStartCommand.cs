@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using System.Data.Entity;
+=======
+using System.Data.Entity;
+>>>>>>> theirs
 using System.Linq;
 using API;
 using API.Command;

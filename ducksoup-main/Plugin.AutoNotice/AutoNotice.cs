@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using System.Timers;
+=======
+using System.Timers;
+>>>>>>> theirs
 using API;
 using API.Command;
 using API.Database.DuckSoup;

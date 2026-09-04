@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿namespace PacketLibrary.Enums.Global;
+=======
+namespace PacketLibrary.Enums.Global;
+>>>>>>> theirs
 
 // https://github.com/DummkopfOfHachtenduden/SilkroadDoc/blob/master/Packets/GLOBAL/SecurityFlag.cs
 [Flags]

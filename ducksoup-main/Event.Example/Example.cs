@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using API.Event;
+=======
+using API.Event;
+>>>>>>> theirs
 
 namespace Event.Quiz;
 

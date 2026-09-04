@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿namespace PacketLibrary.Enums.Agent.Operator;
+=======
+namespace PacketLibrary.Enums.Agent.Operator;
+>>>>>>> theirs
 
 // https://www.elitepvpers.com/forum/sro-coding-corner/4388307-about-gm-command-packet.html
 public enum GameCommands : byte

@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿namespace API.Command;
+=======
+namespace API.Command;
+>>>>>>> theirs
 
 public interface ICommandManager : IDisposable
 {

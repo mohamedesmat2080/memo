@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿#region
+=======
+#region
+>>>>>>> theirs
 
 using System;
 using System.Collections.Generic;

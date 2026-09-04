@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿#region
+=======
+#region
+>>>>>>> theirs
 
 using System.Reflection;
 using log4net;

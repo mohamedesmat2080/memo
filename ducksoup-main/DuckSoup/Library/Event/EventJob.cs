@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using System.Threading.Tasks;
+=======
+using System.Threading.Tasks;
+>>>>>>> theirs
 using API.Event;
 using Quartz;
 

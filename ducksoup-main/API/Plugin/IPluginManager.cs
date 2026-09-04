@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using McMaster.NETCore.Plugins;
+=======
+using McMaster.NETCore.Plugins;
+>>>>>>> theirs
 
 namespace API.Plugin;
 

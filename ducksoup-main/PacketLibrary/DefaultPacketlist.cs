@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using PacketLibrary.Download.Client;
+=======
+using PacketLibrary.Download.Client;
+>>>>>>> theirs
 using PacketLibrary.Gateway.Client;
 using PacketLibrary.Agent.Client;
 using PacketLibrary.Global.Client;

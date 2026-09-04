@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using API;
+=======
+using API;
+>>>>>>> theirs
 using API.Event;
 using API.ServiceFactory;
 

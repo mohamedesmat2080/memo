@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using System;
+=======
+using System;
+>>>>>>> theirs
 using System.Text;
 
 namespace SilkroadSecurityAPI

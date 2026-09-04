@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using API.Exceptions;
+=======
+using API.Exceptions;
+>>>>>>> theirs
 
 namespace API.Command;
 

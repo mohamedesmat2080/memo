@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using System.ComponentModel;
+=======
+using System.ComponentModel;
+>>>>>>> theirs
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 

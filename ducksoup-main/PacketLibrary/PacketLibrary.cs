@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿namespace PacketLibrary;
+=======
+namespace PacketLibrary;
+>>>>>>> theirs
 
 public class PacketLibrary
 {

@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿namespace API
+=======
+namespace API
+>>>>>>> theirs
 {
     public enum PVPCape : byte
     {

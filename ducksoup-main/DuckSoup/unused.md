@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿AGENT_GAME_READY
+=======
+AGENT_GAME_READY
+>>>>>>> theirs
 ```csharp
             //
             // if (session.CurLevel > 90)

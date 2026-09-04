@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿namespace API.ServiceFactory.Exceptions;
+=======
+namespace API.ServiceFactory.Exceptions;
+>>>>>>> theirs
 
 public class ServiceNotRegisteredException : Exception
 {

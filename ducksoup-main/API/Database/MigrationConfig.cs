@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using System.Data.Entity;
+=======
+using System.Data.Entity;
+>>>>>>> theirs
 
 namespace API.Database;
 

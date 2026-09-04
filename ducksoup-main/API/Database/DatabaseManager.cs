@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿
+=======
+
+>>>>>>> theirs
 using API.Settings;
 using System.Data.Entity;
 

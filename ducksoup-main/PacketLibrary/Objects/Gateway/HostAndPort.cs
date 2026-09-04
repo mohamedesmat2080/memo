@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using SilkroadSecurityAPI;
+=======
+using SilkroadSecurityAPI;
+>>>>>>> theirs
 
 namespace PacketLibrary.Objects.Gateway;
 

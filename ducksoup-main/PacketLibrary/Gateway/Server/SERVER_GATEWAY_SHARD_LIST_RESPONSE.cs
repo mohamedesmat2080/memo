@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using PacketLibrary.Enums;
+=======
+using PacketLibrary.Enums;
+>>>>>>> theirs
 using PacketLibrary.Objects.Gateway;
 using SilkroadSecurityAPI;
 

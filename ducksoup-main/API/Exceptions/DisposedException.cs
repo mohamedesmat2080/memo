@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿namespace API.Exceptions;
+=======
+namespace API.Exceptions;
+>>>>>>> theirs
 
 public class DisposedException : Exception
 {

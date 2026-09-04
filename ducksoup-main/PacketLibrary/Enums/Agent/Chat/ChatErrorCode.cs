@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿namespace PacketLibrary.Enums.Agent.Chat;
+=======
+namespace PacketLibrary.Enums.Agent.Chat;
+>>>>>>> theirs
 
 // https://github.com/DummkopfOfHachtenduden/SilkroadDoc/wiki/ChatErrorCode
 /// <summary>

@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿namespace PacketLibrary.Enums.Gateway;
+=======
+namespace PacketLibrary.Enums.Gateway;
+>>>>>>> theirs
 
 // https://github.com/DummkopfOfHachtenduden/SilkroadDoc/blob/master/Packets/GATEWAY/BlockTypes.cs
 public enum LoginBlockType : byte

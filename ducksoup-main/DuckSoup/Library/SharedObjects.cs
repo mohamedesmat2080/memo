@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using System.Collections.Generic;
+=======
+using System.Collections.Generic;
+>>>>>>> theirs
 using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Data.Entity;

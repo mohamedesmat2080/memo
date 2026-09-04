@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿namespace PacketLibrary.Enums.Gateway;
+=======
+namespace PacketLibrary.Enums.Gateway;
+>>>>>>> theirs
 
 // https://github.com/DummkopfOfHachtenduden/SilkroadDoc/wiki/OperationType
 public enum OperationType : byte

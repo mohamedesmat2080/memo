@@ -1,4 +1,8 @@
+<<<<<<< ours
 ﻿using System.Collections.ObjectModel;
+=======
+using System.Collections.ObjectModel;
+>>>>>>> theirs
 using API.Exceptions;
 using API.ServiceFactory.Exceptions;
 
